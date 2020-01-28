@@ -8,7 +8,7 @@ namespace LuckySpin.Models
     public class Player
     {
         public string Name { get; set; }
-        public int Lucky { get; set; }
+        public int LuckyNum { get; set; }
 
     }
 }
