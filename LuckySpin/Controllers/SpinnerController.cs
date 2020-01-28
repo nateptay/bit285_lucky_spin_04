@@ -36,6 +36,9 @@ namespace LuckySpin.Controllers
         {
             //Load up a Spin object with data
             Spin spin = new Spin();
+            ViewBag.Name = "Player";
+            if (p1.Name != null)
+                ViewBag.Name = p1.Name;
             spin.Luck = p1.LuckyNum; //TODO: Edit this to assign Player's lucky number to spin.Luck
             spin.A = random.Next(1, 10);
             spin.B = random.Next(1, 10);
